@@ -23,5 +23,14 @@ public class EmployeeController {
     public ResponseEntity<Employee> getEmployeeId(@PathVariable Long id){
         return ResponseEntity.ok(empoyeeService.getRecordById(id));
     }
-
+    // get all records
+    @GetMapping
+    public ResponseEntity<?> getAllRecords(){
+        return ResponseEntity.ok(empoyeeService.getAllRecords());
+    }
+    // get record for higher paid salary
+    @GetMapping("/higher-salary")
+    public ResponseEntity<?> getHigherSalaryPaidEmployees(){
+        return ResponseEntity.ok(empoyeeService.getHigherSalaryPaidEmployees());
+    }
 }

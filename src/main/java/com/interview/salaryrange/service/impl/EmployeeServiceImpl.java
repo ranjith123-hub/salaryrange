@@ -36,7 +36,7 @@ public class EmployeeServiceImpl implements IEmpoyeeService {
     }
 
    @Override
-    public List<Employee> getHighSalaryPaidEmployees() {
+    public List<Employee> getHigherSalaryPaidEmployees() {
 
        return repo.findHighSalaryPaidEmployees();
     }

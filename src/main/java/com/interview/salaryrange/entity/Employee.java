@@ -27,5 +27,8 @@ public class Employee {
 //    @ManyToOne
 //    @JoinColumn(name = "designation_id")
     private Designation desg;
+    public static void m1(){
+
+    }
 
 }
