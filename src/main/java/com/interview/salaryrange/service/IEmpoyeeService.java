@@ -13,7 +13,7 @@ public interface IEmpoyeeService {
     // get all records
      List<Employee> getAllRecords();
     // get record for salary in range
-        List<Employee> getHighSalaryPaidEmployees();
+        List<Employee> getHigherSalaryPaidEmployees();
     // update record
 
     // delete record
